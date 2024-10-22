@@ -6,10 +6,10 @@ const router = Router();
 
 let trees: Tree[] = [];
 
-function findTree(trees: Tree[], uuid: string) {
+export function findTree(trees: Tree[], uuid: string) {
   return trees.find((tree) => tree.uuid === uuid);
 }
-function findTreeIndex(trees: Tree[], uuid: string) {
+export function findTreeIndex(trees: Tree[], uuid: string) {
   return trees.findIndex((tree) => tree.uuid === uuid);
 }
 
