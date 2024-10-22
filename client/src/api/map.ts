@@ -1,6 +1,7 @@
 const baseUrl = "https://api.mapbox.com";
-const access_token =
-  "pk.eyJ1IjoiYW1hbGRhcmU5MyIsImEiOiJjbTIyYnQ1a2wwNWY3MnFvZjFsc2ttYzF3In0.tfl5F4w0_7Yxl3Td45jBlw";
+const access_token = import.meta.env.VITE_MAPBOX_API_KEY;
+
+console.log(access_token);
 
 export function searchAddress(query: string) {
   const params = new URLSearchParams({
