@@ -16,7 +16,13 @@ export function findTreeIndex(trees: Tree[], uuid: string) {
 router.post("/", (req: Request, res: Response) => {
   const newTree: Tree = {
     uuid: uuidv4(),
+    tree_tenders_group: req.body.tree_tenders_group,
+    tree_id: req.body.tree_id,
+    season_planted: req.body.season_planted,
     address: req.body.address,
+    site_id: req.body.site_id,
+    location_notes: req.body.location_notes,
+    species: req.body.species,
     completed: false,
   };
 

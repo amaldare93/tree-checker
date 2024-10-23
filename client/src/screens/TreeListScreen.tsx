@@ -8,8 +8,7 @@ import {
   Row,
 } from "react-aria-components";
 
-import { getTrees, postTree } from "../api/trees";
-import { searchAddress } from "../api/map";
+import { getTrees } from "../api/trees";
 
 function TreeListScreen(props) {
   const [trees, setTrees] = useState([]);

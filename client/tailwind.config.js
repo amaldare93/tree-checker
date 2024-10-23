@@ -8,6 +8,11 @@ export default {
       fontFamily: {
         sans: ["InterVariable", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        "tt-primary": "#84bd01",
+        "tt-secondary": "#295309",
+        "tt-berry": "#8f0773",
+      },
     },
   },
   plugins: [],
